@@ -180,7 +180,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 1920px) {
   footer {
     height: 4%;
   }
@@ -262,7 +262,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 1920px) {
   .container {
     width: 27%;
   }
@@ -312,7 +312,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 1920px) {
   .btn a {
     width: 9%;
   }
@@ -502,7 +502,7 @@ body {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 1920px) {
   .menu1-container {
     font-size: 1.8em;
   }
@@ -693,7 +693,7 @@ body {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 1920px) {
   .menu2-container {
     font-size: 1.8em;
   }
@@ -880,7 +880,7 @@ body {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 1920px) {
   .menu3-container {
     font-size: 1.8em;
   }
@@ -1067,7 +1067,7 @@ body {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 1920px) {
   .menu4-container {
     font-size: 1.8em;
   }
@@ -1128,7 +1128,7 @@ h1 {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 1920px) {
   .mentions {
     font-size: 1.5em;
   }
