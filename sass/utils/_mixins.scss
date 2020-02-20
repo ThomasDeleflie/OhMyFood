@@ -1,0 +1,195 @@
+@mixin animationhome {
+    &:hover{
+        animation: wiggle 500ms;
+    }
+}
+
+@mixin menu($color, $weight, $fontsize, $h2-light, $h2-dark, $h3-hover, $color-p, $color-menu1, $color-menu2,){
+//========box===============    
+    margin: auto;
+    width: 57%;
+    padding: 50px 50px 200px 50px;
+    background-color: $color;
+    box-shadow: 0 0 10px 0 #989997;
+//========box================
+//====== Main title===========
+    h2{
+        text-align: center;
+        font: {
+            family: 'Kaushan Script','Satisfy','Devonshire','Manjari', cursive;
+            weight: $weight;
+            size: $fontsize;
+        }
+        background: linear-gradient(275deg, $h2-light 24%, $h2-dark) 77%;
+        -webkit-background-clip: text;
+        color: transparent;
+        padding: 15px;
+    }
+//====== Main title===========
+//======separator and dishes titles===== 
+    .line, .line + div{
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            margin-top: 40px;
+            width: 98%;
+            height: 25px;
+        }
+
+        h3{
+            margin-top: 39px;
+            font-family: 'kalam', 'squada one', cursive;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+            
+            &:hover{
+                border-bottom: 2px solid $h3-hover;
+                animation: anim 1s 0ms infinite normal ease-out forwards;  
+            }
+        }
+    }
+//======separator and dishes titles===== 
+//=====margin dishes menu 1=============
+    .line + div{
+            margin: 0 56px;
+    }
+//=====margin dishes menu 1=============
+//======Dish and prices=================
+    .menu{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+
+        p{
+            margin: 0;
+            font-family: cursive;
+        }
+
+        div{
+            justify-content: space-between;
+            display: flex; 
+            font-family: cursive;
+            line-height: 3em;
+        }
+
+        & > p{ 
+            line-height: 2.5em;
+        }
+
+        & div p + p{
+            font: {
+                weight: $weight;  
+                family: 'kalam', cursive;
+                size: 1.1em;
+                }
+        }
+    }
+//====== colors menu 2======================
+    div:nth-of-type(1) h3, div:nth-of-type(2) p{
+        color: $h3-hover;
+    }
+
+    div:nth-of-type(3) h3, div:nth-of-type(4) p{
+        color: $color-menu1;
+    }
+
+    div:nth-of-type(5) h3, div:nth-of-type(6) p{
+        color: $color-menu2;
+    }
+//====== colors menu 2======================
+//===logo and title bottom of menu 1========
+    .logo, .logo-bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &.logo img{
+            height: 120px;
+        }
+
+        &.logo h2{
+            width: 100%;
+            margin: 0;
+        }
+
+        h3{
+            padding-top: 30px;
+            font: {
+                family: 'Devonshire', 'Kalam','Squada One', cursive;
+                size: 1.7em;
+            }
+        }
+
+        img{
+            height: 70px;
+            margin-top: 38px;
+        }
+    }
+//===logo and title bottom of menu 1========
+//======Dish and prices=============
+//============@ media===============
+    @include sm{
+        width: 90%;
+        padding: 10px; 
+        h2{
+            font: {
+                weight: lighter;
+                size: 1.7em;
+            }
+            padding: 0;
+        }
+
+        p{
+            line-height: 2em;
+            padding: 10px;
+        }
+        
+        .line + div{
+            margin: 0;
+        }
+        }
+
+        @include lg{
+            width: 68%;
+            
+            h2{
+                font-size: 3em;
+            }
+            .line + div{
+                margin: 0 20px 0 15px;
+                }
+            }
+
+        @include xl{
+            width: 80%;
+
+            h2{
+                font-size: 4em;
+            }
+        
+            h3{
+                font-size: 1.5em;
+                }
+            p{
+                font-size: 1.5em;
+                }
+        }
+
+        @include xxl{
+            font-size: 1.8em;
+            h2{
+                font-size: 3em
+            }
+        }
+}       
+        
+//============ end of @ media====
+@mixin menu-h1 {
+    text-align: center;
+    padding: 30px 0 10px 0;
+//===============@media==========
+    @include sm{
+        font-size: 0.9em;
+    }
+}

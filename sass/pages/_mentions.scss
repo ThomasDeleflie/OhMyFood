@@ -1,0 +1,42 @@
+/*========mentions======*/
+.mentions{
+    margin: 5px 70px;
+    text-align: justify;
+    
+    h1{
+        text-align: center;
+    }
+ //========@ media=============   
+    @include sm{
+        margin: 20px;
+        h1{
+            font-size: 1.7em;
+        }
+        
+        h3{
+            text-align: center;
+        }
+    }
+
+    @include lg{
+        font-size: 1.5em;
+        
+        h3{
+            text-align: center;
+        }
+    }
+
+    @include xl{
+        font-size: 1.5em;
+        
+        h3{
+            text-align: center;
+        }
+    }
+
+    @include xxl{
+        font-size: 1.5em;
+    }
+//=========end of media=========
+}
+/*========end of mentions======*/

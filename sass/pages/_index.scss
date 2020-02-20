@@ -1,0 +1,97 @@
+/*========container======*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 720px;
+  width: 39%;
+  margin: auto;
+  padding-top: 70px;
+
+    div{
+      overflow: hidden;
+      height: $heightindex;
+      box-shadow: 0 0 10px 0 #989997; 
+    }
+
+    img{
+    height: $heightindex;
+
+    &:hover{
+        transform: scale(1.19);
+        transition: all 0.8s;
+        opacity: 0.33;
+      }   
+    }
+//========@ media============
+    @include sm{
+      width: auto;
+      height: auto;
+      justify-content: center; 
+
+      div{
+        width: auto;
+        margin: 7px 0 7px 0;
+      }
+    }
+
+    @include md{
+    width: 65%;
+    }
+
+    @include lg{
+      width: 65%;
+
+      div{
+        width: auto;
+      }
+    }
+
+    @include xl{
+      width: 49%;
+      margin-top: 180px;
+    }
+
+    @include xxl{
+      width: 27%;
+    }
+}
+//=====end of media===========
+.btn a{    
+      text-decoration: none;
+      color: $btn;
+      font-size: 1.3em;
+      border-radius: 0.4em;
+      background-color: $headerfooter;
+      height: 30px;
+      width: 13%;
+      padding: 4px 0 2px 10px;
+      display: flex;
+      margin: auto; 
+    
+    .dot{
+        animation: typing 1.5s steps(90, end);
+        letter-spacing: .19em;
+        margin: 5 auto;
+        overflow: hidden;
+        animation-iteration-count: infinite;
+        }
+//========@ media================
+      @include sm{ 
+        width: 48%; 
+        margin-top: 20px; 
+      }  
+      @include lg{
+        width: 22%;
+      }
+
+      @include xl{
+        width: 16%;
+      }
+
+      @include xxl{
+        width: 9%
+      }
+}
+//========end of media===========
+/*========end of container======*/

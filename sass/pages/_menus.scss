@@ -1,0 +1,30 @@
+/*========menu======*/
+body{
+    margin-bottom: 130px;
+}
+
+.menu1-container{
+    @include menu (#FCDFDB, 900, 3em, #000000, #000000, #000000, #000000, #000000, #000000);
+
+    .line + div{
+        margin: 0; 
+    }
+}
+
+.menu2-container{
+    @include menu (#FFF5FE, 900, 3em, #8F5BFE, #DF871E, #C67412, #c67412, #A56799, #6E4CCC);
+    }
+
+
+.menu3-container{
+    @include menu (#EDEFEF, 100, 4em, #0889FB, #0228DD, #000000, #0228DD, #000000, #000000);
+}
+
+.menu4-container{
+    @include menu (#FDFFFD, 100, 5em, #CCFF66, #339933, #000000, #41963C, #000000, #000000);
+}
+
+h1{
+    @include menu-h1;
+}
+/*========end of menu======*/

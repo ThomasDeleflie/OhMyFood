@@ -1,0 +1,1138 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+/*========header and footer======*/
+header {
+  background-color: #579c87;
+}
+
+header img {
+  width: 25%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  header img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  header img {
+    width: 50%;
+  }
+}
+
+footer {
+  background-color: #579c87;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a, footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  color: #fdcb46;
+  margin: 4px 20px 0 0;
+  font-size: 1.1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer a:hover {
+  -webkit-animation: wiggle 500ms;
+          animation: wiggle 500ms;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  footer ul {
+    font-size: 1em;
+    width: 100%;
+    padding-left: 9px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    height: 5%;
+  }
+  footer ul {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  footer {
+    height: 4%;
+  }
+  footer ul {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1920px) {
+  footer {
+    height: 4%;
+  }
+  footer ul {
+    font-size: 1.8em;
+    margin: auto;
+  }
+}
+
+/*========end of header and footer======*/
+/*========container======*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 720px;
+  width: 39%;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.container div {
+  overflow: hidden;
+  height: 330px;
+  -webkit-box-shadow: 0 0 10px 0 #989997;
+          box-shadow: 0 0 10px 0 #989997;
+}
+
+.container img {
+  height: 330px;
+}
+
+.container img:hover {
+  -webkit-transform: scale(1.19);
+          transform: scale(1.19);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0.33;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .container {
+    width: auto;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container div {
+    width: auto;
+    margin: 7px 0 7px 0;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 767px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 65%;
+  }
+  .container div {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    width: 49%;
+    margin-top: 180px;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1920px) {
+  .container {
+    width: 27%;
+  }
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fdcb46;
+  font-size: 1.3em;
+  border-radius: 0.4em;
+  background-color: #579c87;
+  height: 30px;
+  width: 13%;
+  padding: 4px 0 2px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.btn a .dot {
+  -webkit-animation: typing 1.5s steps(90, end);
+          animation: typing 1.5s steps(90, end);
+  letter-spacing: .19em;
+  margin: 5 auto;
+  overflow: hidden;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .btn a {
+    width: 48%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn a {
+    width: 22%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .btn a {
+    width: 16%;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1920px) {
+  .btn a {
+    width: 9%;
+  }
+}
+
+/*========end of container======*/
+/*========menu======*/
+body {
+  margin-bottom: 130px;
+}
+
+.menu1-container {
+  margin: auto;
+  width: 57%;
+  padding: 50px 50px 200px 50px;
+  background-color: #FCDFDB;
+  -webkit-box-shadow: 0 0 10px 0 #989997;
+          box-shadow: 0 0 10px 0 #989997;
+}
+
+.menu1-container h2 {
+  text-align: center;
+  font-family: 'Kaushan Script','Satisfy','Devonshire','Manjari', cursive;
+  font-weight: 900;
+  font-size: 3em;
+  background: linear-gradient(275deg, #000000 24%, #000000) 77%;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 15px;
+}
+
+.menu1-container .line, .menu1-container .line + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu1-container .line img, .menu1-container .line + div img {
+  margin-top: 40px;
+  width: 98%;
+  height: 25px;
+}
+
+.menu1-container .line h3, .menu1-container .line + div h3 {
+  margin-top: 39px;
+  font-family: 'kalam', 'squada one', cursive;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.menu1-container .line h3:hover, .menu1-container .line + div h3:hover {
+  border-bottom: 2px solid #000000;
+  -webkit-animation: anim 1s 0ms infinite normal ease-out forwards;
+          animation: anim 1s 0ms infinite normal ease-out forwards;
+}
+
+.menu1-container .line + div {
+  margin: 0 56px;
+}
+
+.menu1-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+
+.menu1-container .menu p {
+  margin: 0;
+  font-family: cursive;
+}
+
+.menu1-container .menu div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: cursive;
+  line-height: 3em;
+}
+
+.menu1-container .menu > p {
+  line-height: 2.5em;
+}
+
+.menu1-container .menu div p + p {
+  font-weight: 900;
+  font-family: 'kalam', cursive;
+  font-size: 1.1em;
+}
+
+.menu1-container div:nth-of-type(1) h3, .menu1-container div:nth-of-type(2) p {
+  color: #000000;
+}
+
+.menu1-container div:nth-of-type(3) h3, .menu1-container div:nth-of-type(4) p {
+  color: #000000;
+}
+
+.menu1-container div:nth-of-type(5) h3, .menu1-container div:nth-of-type(6) p {
+  color: #000000;
+}
+
+.menu1-container .logo, .menu1-container .logo-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu1-container .logo.logo img, .menu1-container .logo-bottom.logo img {
+  height: 120px;
+}
+
+.menu1-container .logo.logo h2, .menu1-container .logo-bottom.logo h2 {
+  width: 100%;
+  margin: 0;
+}
+
+.menu1-container .logo h3, .menu1-container .logo-bottom h3 {
+  padding-top: 30px;
+  font-family: 'Devonshire', 'Kalam','Squada One', cursive;
+  font-size: 1.7em;
+}
+
+.menu1-container .logo img, .menu1-container .logo-bottom img {
+  height: 70px;
+  margin-top: 38px;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .menu1-container {
+    width: 90%;
+    padding: 10px;
+  }
+  .menu1-container h2 {
+    font-weight: lighter;
+    font-size: 1.7em;
+    padding: 0;
+  }
+  .menu1-container p {
+    line-height: 2em;
+    padding: 10px;
+  }
+  .menu1-container .line + div {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu1-container {
+    width: 68%;
+  }
+  .menu1-container h2 {
+    font-size: 3em;
+  }
+  .menu1-container .line + div {
+    margin: 0 20px 0 15px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .menu1-container {
+    width: 80%;
+  }
+  .menu1-container h2 {
+    font-size: 4em;
+  }
+  .menu1-container h3 {
+    font-size: 1.5em;
+  }
+  .menu1-container p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1920px) {
+  .menu1-container {
+    font-size: 1.8em;
+  }
+  .menu1-container h2 {
+    font-size: 3em;
+  }
+}
+
+.menu1-container .line + div {
+  margin: 0;
+}
+
+.menu2-container {
+  margin: auto;
+  width: 57%;
+  padding: 50px 50px 200px 50px;
+  background-color: #FFF5FE;
+  -webkit-box-shadow: 0 0 10px 0 #989997;
+          box-shadow: 0 0 10px 0 #989997;
+}
+
+.menu2-container h2 {
+  text-align: center;
+  font-family: 'Kaushan Script','Satisfy','Devonshire','Manjari', cursive;
+  font-weight: 900;
+  font-size: 3em;
+  background: linear-gradient(275deg, #8F5BFE 24%, #DF871E) 77%;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 15px;
+}
+
+.menu2-container .line, .menu2-container .line + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu2-container .line img, .menu2-container .line + div img {
+  margin-top: 40px;
+  width: 98%;
+  height: 25px;
+}
+
+.menu2-container .line h3, .menu2-container .line + div h3 {
+  margin-top: 39px;
+  font-family: 'kalam', 'squada one', cursive;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.menu2-container .line h3:hover, .menu2-container .line + div h3:hover {
+  border-bottom: 2px solid #C67412;
+  -webkit-animation: anim 1s 0ms infinite normal ease-out forwards;
+          animation: anim 1s 0ms infinite normal ease-out forwards;
+}
+
+.menu2-container .line + div {
+  margin: 0 56px;
+}
+
+.menu2-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+
+.menu2-container .menu p {
+  margin: 0;
+  font-family: cursive;
+}
+
+.menu2-container .menu div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: cursive;
+  line-height: 3em;
+}
+
+.menu2-container .menu > p {
+  line-height: 2.5em;
+}
+
+.menu2-container .menu div p + p {
+  font-weight: 900;
+  font-family: 'kalam', cursive;
+  font-size: 1.1em;
+}
+
+.menu2-container div:nth-of-type(1) h3, .menu2-container div:nth-of-type(2) p {
+  color: #C67412;
+}
+
+.menu2-container div:nth-of-type(3) h3, .menu2-container div:nth-of-type(4) p {
+  color: #A56799;
+}
+
+.menu2-container div:nth-of-type(5) h3, .menu2-container div:nth-of-type(6) p {
+  color: #6E4CCC;
+}
+
+.menu2-container .logo, .menu2-container .logo-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu2-container .logo.logo img, .menu2-container .logo-bottom.logo img {
+  height: 120px;
+}
+
+.menu2-container .logo.logo h2, .menu2-container .logo-bottom.logo h2 {
+  width: 100%;
+  margin: 0;
+}
+
+.menu2-container .logo h3, .menu2-container .logo-bottom h3 {
+  padding-top: 30px;
+  font-family: 'Devonshire', 'Kalam','Squada One', cursive;
+  font-size: 1.7em;
+}
+
+.menu2-container .logo img, .menu2-container .logo-bottom img {
+  height: 70px;
+  margin-top: 38px;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .menu2-container {
+    width: 90%;
+    padding: 10px;
+  }
+  .menu2-container h2 {
+    font-weight: lighter;
+    font-size: 1.7em;
+    padding: 0;
+  }
+  .menu2-container p {
+    line-height: 2em;
+    padding: 10px;
+  }
+  .menu2-container .line + div {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu2-container {
+    width: 68%;
+  }
+  .menu2-container h2 {
+    font-size: 3em;
+  }
+  .menu2-container .line + div {
+    margin: 0 20px 0 15px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .menu2-container {
+    width: 80%;
+  }
+  .menu2-container h2 {
+    font-size: 4em;
+  }
+  .menu2-container h3 {
+    font-size: 1.5em;
+  }
+  .menu2-container p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1920px) {
+  .menu2-container {
+    font-size: 1.8em;
+  }
+  .menu2-container h2 {
+    font-size: 3em;
+  }
+}
+
+.menu3-container {
+  margin: auto;
+  width: 57%;
+  padding: 50px 50px 200px 50px;
+  background-color: #EDEFEF;
+  -webkit-box-shadow: 0 0 10px 0 #989997;
+          box-shadow: 0 0 10px 0 #989997;
+}
+
+.menu3-container h2 {
+  text-align: center;
+  font-family: 'Kaushan Script','Satisfy','Devonshire','Manjari', cursive;
+  font-weight: 100;
+  font-size: 4em;
+  background: linear-gradient(275deg, #0889FB 24%, #0228DD) 77%;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 15px;
+}
+
+.menu3-container .line, .menu3-container .line + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu3-container .line img, .menu3-container .line + div img {
+  margin-top: 40px;
+  width: 98%;
+  height: 25px;
+}
+
+.menu3-container .line h3, .menu3-container .line + div h3 {
+  margin-top: 39px;
+  font-family: 'kalam', 'squada one', cursive;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.menu3-container .line h3:hover, .menu3-container .line + div h3:hover {
+  border-bottom: 2px solid #000000;
+  -webkit-animation: anim 1s 0ms infinite normal ease-out forwards;
+          animation: anim 1s 0ms infinite normal ease-out forwards;
+}
+
+.menu3-container .line + div {
+  margin: 0 56px;
+}
+
+.menu3-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+
+.menu3-container .menu p {
+  margin: 0;
+  font-family: cursive;
+}
+
+.menu3-container .menu div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: cursive;
+  line-height: 3em;
+}
+
+.menu3-container .menu > p {
+  line-height: 2.5em;
+}
+
+.menu3-container .menu div p + p {
+  font-weight: 100;
+  font-family: 'kalam', cursive;
+  font-size: 1.1em;
+}
+
+.menu3-container div:nth-of-type(1) h3, .menu3-container div:nth-of-type(2) p {
+  color: #000000;
+}
+
+.menu3-container div:nth-of-type(3) h3, .menu3-container div:nth-of-type(4) p {
+  color: #000000;
+}
+
+.menu3-container div:nth-of-type(5) h3, .menu3-container div:nth-of-type(6) p {
+  color: #000000;
+}
+
+.menu3-container .logo, .menu3-container .logo-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu3-container .logo.logo img, .menu3-container .logo-bottom.logo img {
+  height: 120px;
+}
+
+.menu3-container .logo.logo h2, .menu3-container .logo-bottom.logo h2 {
+  width: 100%;
+  margin: 0;
+}
+
+.menu3-container .logo h3, .menu3-container .logo-bottom h3 {
+  padding-top: 30px;
+  font-family: 'Devonshire', 'Kalam','Squada One', cursive;
+  font-size: 1.7em;
+}
+
+.menu3-container .logo img, .menu3-container .logo-bottom img {
+  height: 70px;
+  margin-top: 38px;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .menu3-container {
+    width: 90%;
+    padding: 10px;
+  }
+  .menu3-container h2 {
+    font-weight: lighter;
+    font-size: 1.7em;
+    padding: 0;
+  }
+  .menu3-container p {
+    line-height: 2em;
+    padding: 10px;
+  }
+  .menu3-container .line + div {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu3-container {
+    width: 68%;
+  }
+  .menu3-container h2 {
+    font-size: 3em;
+  }
+  .menu3-container .line + div {
+    margin: 0 20px 0 15px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .menu3-container {
+    width: 80%;
+  }
+  .menu3-container h2 {
+    font-size: 4em;
+  }
+  .menu3-container h3 {
+    font-size: 1.5em;
+  }
+  .menu3-container p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1920px) {
+  .menu3-container {
+    font-size: 1.8em;
+  }
+  .menu3-container h2 {
+    font-size: 3em;
+  }
+}
+
+.menu4-container {
+  margin: auto;
+  width: 57%;
+  padding: 50px 50px 200px 50px;
+  background-color: #FDFFFD;
+  -webkit-box-shadow: 0 0 10px 0 #989997;
+          box-shadow: 0 0 10px 0 #989997;
+}
+
+.menu4-container h2 {
+  text-align: center;
+  font-family: 'Kaushan Script','Satisfy','Devonshire','Manjari', cursive;
+  font-weight: 100;
+  font-size: 5em;
+  background: linear-gradient(275deg, #CCFF66 24%, #339933) 77%;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 15px;
+}
+
+.menu4-container .line, .menu4-container .line + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu4-container .line img, .menu4-container .line + div img {
+  margin-top: 40px;
+  width: 98%;
+  height: 25px;
+}
+
+.menu4-container .line h3, .menu4-container .line + div h3 {
+  margin-top: 39px;
+  font-family: 'kalam', 'squada one', cursive;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+
+.menu4-container .line h3:hover, .menu4-container .line + div h3:hover {
+  border-bottom: 2px solid #000000;
+  -webkit-animation: anim 1s 0ms infinite normal ease-out forwards;
+          animation: anim 1s 0ms infinite normal ease-out forwards;
+}
+
+.menu4-container .line + div {
+  margin: 0 56px;
+}
+
+.menu4-container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+
+.menu4-container .menu p {
+  margin: 0;
+  font-family: cursive;
+}
+
+.menu4-container .menu div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: cursive;
+  line-height: 3em;
+}
+
+.menu4-container .menu > p {
+  line-height: 2.5em;
+}
+
+.menu4-container .menu div p + p {
+  font-weight: 100;
+  font-family: 'kalam', cursive;
+  font-size: 1.1em;
+}
+
+.menu4-container div:nth-of-type(1) h3, .menu4-container div:nth-of-type(2) p {
+  color: #000000;
+}
+
+.menu4-container div:nth-of-type(3) h3, .menu4-container div:nth-of-type(4) p {
+  color: #000000;
+}
+
+.menu4-container div:nth-of-type(5) h3, .menu4-container div:nth-of-type(6) p {
+  color: #000000;
+}
+
+.menu4-container .logo, .menu4-container .logo-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu4-container .logo.logo img, .menu4-container .logo-bottom.logo img {
+  height: 120px;
+}
+
+.menu4-container .logo.logo h2, .menu4-container .logo-bottom.logo h2 {
+  width: 100%;
+  margin: 0;
+}
+
+.menu4-container .logo h3, .menu4-container .logo-bottom h3 {
+  padding-top: 30px;
+  font-family: 'Devonshire', 'Kalam','Squada One', cursive;
+  font-size: 1.7em;
+}
+
+.menu4-container .logo img, .menu4-container .logo-bottom img {
+  height: 70px;
+  margin-top: 38px;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .menu4-container {
+    width: 90%;
+    padding: 10px;
+  }
+  .menu4-container h2 {
+    font-weight: lighter;
+    font-size: 1.7em;
+    padding: 0;
+  }
+  .menu4-container p {
+    line-height: 2em;
+    padding: 10px;
+  }
+  .menu4-container .line + div {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu4-container {
+    width: 68%;
+  }
+  .menu4-container h2 {
+    font-size: 3em;
+  }
+  .menu4-container .line + div {
+    margin: 0 20px 0 15px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .menu4-container {
+    width: 80%;
+  }
+  .menu4-container h2 {
+    font-size: 4em;
+  }
+  .menu4-container h3 {
+    font-size: 1.5em;
+  }
+  .menu4-container p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1920px) {
+  .menu4-container {
+    font-size: 1.8em;
+  }
+  .menu4-container h2 {
+    font-size: 3em;
+  }
+}
+
+h1 {
+  text-align: center;
+  padding: 30px 0 10px 0;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  h1 {
+    font-size: 0.9em;
+  }
+}
+
+/*========end of menu======*/
+/*========mentions======*/
+.mentions {
+  margin: 5px 70px;
+  text-align: justify;
+}
+
+.mentions h1 {
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .mentions {
+    margin: 20px;
+  }
+  .mentions h1 {
+    font-size: 1.7em;
+  }
+  .mentions h3 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mentions {
+    font-size: 1.5em;
+  }
+  .mentions h3 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .mentions {
+    font-size: 1.5em;
+  }
+  .mentions h3 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1920px) {
+  .mentions {
+    font-size: 1.5em;
+  }
+}
+
+/*========end of mentions======*/
+/*# sourceMappingURL=main.css.map */

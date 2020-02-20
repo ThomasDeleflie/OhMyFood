@@ -1,0 +1,80 @@
+/*========header and footer======*/
+header{
+    background-color: $headerfooter;
+
+    img{
+        width: 25%;
+        margin: auto;
+        display: flex;
+    }
+//=======@ media========= 
+    @include sm{
+        img{
+            width: 60%;
+        }
+    }
+
+    @include lg{
+        img{
+            width: 50%;
+        }
+    }
+//========end of media=====
+
+}
+
+footer{
+    background-color: $headerfooter;
+    height: 40px;
+    position: fixed; bottom: 0; left: 0; right: 0;
+
+    a, ul{ 
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+        color: $btn;
+        margin: 4px 20px 0 0;
+        font-size: 1.1em;
+        justify-content: space-between;
+    }
+
+    a{
+        @include animationhome;
+    }
+    //======@ media===========
+    @include sm{
+        ul{
+            font-size: 1em; 
+            width: 100%;
+            padding-left: 9px;
+        }
+    }
+    
+    @include lg{
+        height: 5%;
+        ul{
+            font-size: 1.8em; 
+        }
+    }
+
+    @include xl{
+        height: 4%;
+
+        ul{ 
+            font-size: 1.8em;
+        }
+    }
+
+    @include xxl{
+        height: 4%;
+
+        ul{ 
+            font-size: 1.8em;
+            margin: auto;
+        }
+    }
+}
+    //========end of media=====
+
+
+/*========end of header and footer======*/
