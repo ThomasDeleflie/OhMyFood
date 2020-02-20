@@ -19,9 +19,9 @@ header{
             width: 50%;
         }
     }
+}
 //========end of media=====
 
-}
 
 footer{
     background-color: $headerfooter;
@@ -58,7 +58,7 @@ footer{
     }
 
     @include xl{
-        height: 4%;
+        height: 7%;
 
         ul{ 
             font-size: 1.8em;
@@ -75,6 +75,5 @@ footer{
     }
 }
     //========end of media=====
-
 
 /*========end of header and footer======*/
