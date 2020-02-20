@@ -3,7 +3,7 @@ header{
     background-color: $headerfooter;
 
     img{
-        width: 25%;
+        width: 35%;
         margin: auto;
         display: flex;
     }
@@ -58,7 +58,7 @@ footer{
     }
 
     @include xl{
-        height: 7%;
+        height: 12%;
 
         ul{ 
             font-size: 1.8em;
