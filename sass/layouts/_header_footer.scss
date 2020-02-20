@@ -13,12 +13,6 @@ header{
             width: 60%;
         }
     }
-
-    @include lg{
-        img{
-            width: 50%;
-        }
-    }
 }
 //========end of media=====
 
@@ -47,31 +41,6 @@ footer{
             font-size: 1em; 
             width: 100%;
             padding-left: 9px;
-        }
-    }
-    
-    @include lg{
-        height: 5%;
-        ul{
-            font-size: 1.8em; 
-        }
-    }
-
-    @include xl{
-        height: 8%;
-
-        ul{ 
-            font-size: 1.8em;
-            margin: auto;
-        }
-    }
-
-    @include xxl{
-        height: 4%;
-
-        ul{ 
-            font-size: 1.8em;
-            margin: auto;
         }
     }
 }

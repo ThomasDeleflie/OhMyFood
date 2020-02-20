@@ -30,7 +30,6 @@
       justify-content: center; 
 
       div{
-        width: auto;
         margin: 7px 0 7px 0;
       }
     }
@@ -41,19 +40,14 @@
 
     @include lg{
       width: 65%;
-
-      div{
-        width: auto;
-      }
     }
 
     @include xl{
       width: 49%;
-      margin-top: 180px;
     }
 
     @include xxl{
-      width: 30%;
+      width: 40%; 
     }
 }
 //=====end of media===========
@@ -90,7 +84,7 @@
       }
 
       @include xxl{
-        width: 9%
+        width: 13%
       }
 }
 //========end of media===========

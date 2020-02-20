@@ -120,12 +120,6 @@ header img {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  header img {
-    width: 50%;
-  }
-}
-
 footer {
   background-color: #579c87;
   height: 40px;
@@ -159,35 +153,6 @@ footer a:hover {
     font-size: 1em;
     width: 100%;
     padding-left: 9px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  footer {
-    height: 5%;
-  }
-  footer ul {
-    font-size: 1.8em;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1200px) {
-  footer {
-    height: 8%;
-  }
-  footer ul {
-    font-size: 1.8em;
-    margin: auto;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1920px) {
-  footer {
-    height: 4%;
-  }
-  footer ul {
-    font-size: 1.8em;
-    margin: auto;
   }
 }
 
@@ -236,7 +201,6 @@ footer a:hover {
             justify-content: center;
   }
   .container div {
-    width: auto;
     margin: 7px 0 7px 0;
   }
 }
@@ -251,21 +215,17 @@ footer a:hover {
   .container {
     width: 65%;
   }
-  .container div {
-    width: auto;
-  }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .container {
     width: 49%;
-    margin-top: 180px;
   }
 }
 
 @media (min-width: 1201px) and (max-width: 1920px) {
   .container {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -315,7 +275,7 @@ footer a:hover {
 
 @media (min-width: 1201px) and (max-width: 1920px) {
   .btn a {
-    width: 9%;
+    width: 13%;
   }
 }
 
@@ -504,9 +464,6 @@ body {
 }
 
 @media (min-width: 1201px) and (max-width: 1920px) {
-  .menu1-container {
-    font-size: 1.8em;
-  }
   .menu1-container h2 {
     font-size: 3em;
   }
@@ -695,9 +652,6 @@ body {
 }
 
 @media (min-width: 1201px) and (max-width: 1920px) {
-  .menu2-container {
-    font-size: 1.8em;
-  }
   .menu2-container h2 {
     font-size: 3em;
   }
@@ -882,9 +836,6 @@ body {
 }
 
 @media (min-width: 1201px) and (max-width: 1920px) {
-  .menu3-container {
-    font-size: 1.8em;
-  }
   .menu3-container h2 {
     font-size: 3em;
   }
@@ -1069,9 +1020,6 @@ body {
 }
 
 @media (min-width: 1201px) and (max-width: 1920px) {
-  .menu4-container {
-    font-size: 1.8em;
-  }
   .menu4-container h2 {
     font-size: 3em;
   }
@@ -1108,30 +1056,6 @@ h1 {
   }
   .mentions h3 {
     text-align: center;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .mentions {
-    font-size: 1.5em;
-  }
-  .mentions h3 {
-    text-align: center;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .mentions {
-    font-size: 1.5em;
-  }
-  .mentions h3 {
-    text-align: center;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1920px) {
-  .mentions {
-    font-size: 1.5em;
   }
 }
 

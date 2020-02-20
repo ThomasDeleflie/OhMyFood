@@ -18,25 +18,6 @@
         }
     }
 
-    @include lg{
-        font-size: 1.5em;
-        
-        h3{
-            text-align: center;
-        }
-    }
-
-    @include xl{
-        font-size: 1.5em;
-        
-        h3{
-            text-align: center;
-        }
-    }
-
-    @include xxl{
-        font-size: 1.5em;
-    }
 //=========end of media=========
 }
 /*========end of mentions======*/
