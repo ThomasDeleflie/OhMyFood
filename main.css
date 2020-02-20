@@ -173,7 +173,7 @@ footer a:hover {
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   footer {
-    height: 12%;
+    height: 10%;
   }
   footer ul {
     font-size: 1.8em;
