@@ -177,6 +177,7 @@ footer a:hover {
   }
   footer ul {
     font-size: 1.8em;
+    margin: auto;
   }
 }
 
