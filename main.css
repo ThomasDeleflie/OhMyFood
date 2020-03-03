@@ -207,7 +207,15 @@ footer a:hover {
 
 @media (min-width: 415px) and (max-width: 767px) {
   .container {
-    width: 65%;
+    width: auto;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px;
+  }
+  .container div {
+    margin: 0 10px 10px 10px;
   }
 }
 
@@ -256,8 +264,14 @@ footer a:hover {
 
 @media (min-width: 320px) and (max-width: 414px) {
   .btn a {
-    width: 48%;
+    width: 50%;
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 767px) {
+  .btn a {
+    width: 35%;
   }
 }
 
